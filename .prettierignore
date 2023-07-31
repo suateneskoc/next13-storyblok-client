@@ -1,0 +1,15 @@
+# next.js
+.next/
+
+# vercel
+.vercel
+
+# debug
+npm-debug.log*
+
+# testing
+/coverage
+
+#custom
+.custom-build-cache/
+/public/*.pdf
