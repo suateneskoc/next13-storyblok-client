@@ -7,13 +7,14 @@
     "build": "node -v && next build",
     "check-format": "prettier --check .",
     "check-types": "tsc --pretty --noEmit",
-    "clear": "rm -rf coverage && rm -rf .next && rm -rf .swc && rm -rf .vercel",
+    "clear": "rm -rf coverage && rm -rf .custom-build-cache && rm -rf .next && rm -rf .swc && rm -rf .vercel",
     "dev": "next dev",
     "dev:https": "next dev & local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem",
     "format": "prettier --write .",
     "lint": "next lint",
     "prepare": "husky install",
-    "start": "next start"
+    "start": "next start",
+    "update-storyblok-types": "node src/scripts/generate-storyblok-types.js && prettier --write src/types/storyblok-components-schema.ts"
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.4.0",
@@ -42,13 +43,14 @@
     "eslint-import-resolver-typescript": "^3.5.5",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-simple-import-sort": "^10.0.0",
+    "husky": "^8.0.0",
     "lint-staged": "^13.2.3",
     "local-ssl-proxy": "^2.0.5",
     "postcss": "8.4.24",
     "prettier": "2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
+    "storyblok-generate-ts": "^1.15.0",
     "tailwindcss": "^3.3.2",
-    "typescript": "5.1.5",
-    "husky": "^8.0.0"
+    "typescript": "5.1.5"
   }
 }
