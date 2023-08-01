@@ -17,8 +17,6 @@
     "update-storyblok-types": "node src/scripts/generate-storyblok-types.js && prettier --write src/types/storyblok-components-schema.ts"
   },
   "dependencies": {
-    "@formatjs/intl-localematcher": "^0.4.0",
-    "negotiator": "^0.6.3",
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -26,6 +24,7 @@
     "tailwind-merge": "^1.13.2"
   },
   "devDependencies": {
+    "@formatjs/intl-localematcher": "^0.4.0",
     "@next/bundle-analyzer": "^13.4.7",
     "@svgr/webpack": "^8.0.1",
     "@tailwindcss/container-queries": "^0.1.1",
@@ -46,6 +45,7 @@
     "husky": "^8.0.0",
     "lint-staged": "^13.2.3",
     "local-ssl-proxy": "^2.0.5",
+    "negotiator": "^0.6.3",
     "postcss": "8.4.24",
     "prettier": "2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
